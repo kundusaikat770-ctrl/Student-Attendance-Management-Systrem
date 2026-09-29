@@ -1,11 +1,9 @@
 #STUDENT ATTENDANCE MANAGEMENT SYSTEM
-
 # Terminal colors
 BLUE = "\033[94m"
 GREEN = "\033[92m"
 RED = "\033[91m"
 RESET = "\033[0m"
-
 students = []
 
 def color_status(status):
@@ -16,8 +14,6 @@ def color_status(status):
     return status
 
 # MODULE 1: STUDENT MANAGEMENT
-
-
 def add_students():
 
     print("\n======================================")
@@ -61,8 +57,6 @@ def add_students():
 
     except ValueError:
         print("Invalid input! Please enter a number.")
-
-
 def view_students():
 
     print("\n======================================")
@@ -84,8 +78,6 @@ def view_students():
 
     
     print("-" * 65)
-
-
 def search_student():
 
     print("\n======================================")
@@ -128,7 +120,6 @@ def search_student():
         print("Invalid Roll Number.")
 
 # MODULE 2: ATTENDANCE MANAGEMENT
-
 def take_attendance():
     print("\n======================================")
     print(BLUE + "          TAKE ATTENDANCE" + RESET)
@@ -178,8 +169,6 @@ def take_attendance():
                 )
 
     print("\nAttendance recorded successfully!")
-
-
 def mark_individual_attendance():
     print("\n======================================")
     print(BLUE + "     INDIVIDUAL ATTENDANCE" + RESET )
@@ -214,7 +203,6 @@ def mark_individual_attendance():
         print("Invalid Roll Number.")
 
 # MODULE 3: REPORTS AND ANALYTICS
-
 def attendance_report():
     print("\n======================================")
     print(BLUE + "        ATTENDANCE REPORT" + RESET)
